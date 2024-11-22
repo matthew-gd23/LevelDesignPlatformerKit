@@ -15,7 +15,7 @@ func _ready():
 
 func _process(delta):
 	
-	position.y += (cos(time * random_time) * random_velocity) * delta # Sine movement
-	#rotation_degrees.x += rotation_speed * delta
+	# position.y += (cos(time * random_time) * random_velocity) * delta # Sine movement
+	rotation_degrees.x += rotation_speed * delta
 	
 	time += delta
