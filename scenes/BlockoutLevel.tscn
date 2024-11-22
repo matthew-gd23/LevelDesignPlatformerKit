@@ -189,7 +189,7 @@ transform = Transform3D(0.788085, 0, 2.89464, 0, 3, 0, -2.89464, 0, 0.788085, -4
 script = ExtResource("19_i8fcx")
 
 [node name="cube5" parent="World" instance=ExtResource("19_i3po8")]
-transform = Transform3D(0.788085, 0, 2.89464, 0, 3, 0, -2.89464, 0, 0.788085, -8.32724, 2.16487, 2.31904)
+transform = Transform3D(-0.788084, 0, -2.89464, 0, 3, 0, 2.89464, 0, -0.788084, -9.36252, 2.16487, 6.18274)
 script = ExtResource("19_i8fcx")
 
 [node name="cube6" parent="World" instance=ExtResource("19_i3po8")]
@@ -197,7 +197,7 @@ transform = Transform3D(0.788085, 0, 2.89464, 0, 3, 0, -2.89464, 0, 0.788085, -5
 script = ExtResource("19_i8fcx")
 
 [node name="cube7" parent="World" instance=ExtResource("19_i3po8")]
-transform = Transform3D(0.788085, 0, 2.89464, 0, 3, 0, -2.89464, 0, 0.788085, -9.36252, 2.16487, 6.18274)
+transform = Transform3D(-0.788084, 0, -2.89464, 0, 3, 0, 2.89464, 0, -0.788084, -8.32724, 2.16487, 2.31904)
 script = ExtResource("19_i8fcx")
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
