@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjpydvrsq1qxq"]
+
+[ext_resource type="PackedScene" uid="uid://bsrmqj84lksd7" path="res://models/core_models/cloud.glb" id="1_02ylu"]
+[ext_resource type="Script" path="res://objects/cloud.gd" id="2_mqarb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hdner"]
+
+[node name="cube" instance=ExtResource("1_02ylu")]
+script = ExtResource("2_mqarb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="cube2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cube2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.500797, 0)
+shape = SubResource("BoxShape3D_hdner")

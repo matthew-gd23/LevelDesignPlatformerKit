@@ -6,6 +6,7 @@ var random_number = RandomNumberGenerator.new()
 
 var random_velocity:float
 var random_time:float
+var rotation_speed : float = 60.0
 
 func _ready():
 	
@@ -14,6 +15,7 @@ func _ready():
 
 func _process(delta):
 	
-	position.y += (cos(time * random_time) * random_velocity) * delta # Sine movement
+	# position.y += (cos(time * random_time) * random_velocity) * delta # Sine movement
+	rotation_degrees.x += rotation_speed * delta
 	
 	time += delta
