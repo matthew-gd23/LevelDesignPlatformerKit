@@ -45,7 +45,7 @@ shadow_mesh = SubResource("ArrayMesh_ln7uo")
 [sub_resource type="BoxShape3D" id="BoxShape3D_hdner"]
 size = Vector3(1, 0.947754, 1)
 
-[node name="cube" type="Node3D"]
+[node name="RotatingCloud" type="Node3D"]
 script = ExtResource("2_mqarb")
 
 [node name="cube2" type="MeshInstance3D" parent="."]
