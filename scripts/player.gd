@@ -8,6 +8,8 @@ signal reached_goal
 
 @export_subgroup("Properties")
 @export var movement_speed = 250
+@export var walk_speed = 250
+@export var sprint_speed = 600
 @export var jump_strength = 7
 
 var movement_velocity: Vector3
@@ -113,13 +115,27 @@ func handle_controls(delta):
 		input = input.normalized()
 
 	movement_velocity = input * movement_speed * delta
-
+	
+	# Sprint
+	
+	if Input.is_action_just_pressed("Sprint"):
+		Sprint()
+	if Input.is_action_just_released("Sprint"):
+		StopSprinting()
+	
 	# Jumping
 
+	
 	if Input.is_action_just_pressed("jump"):
 
 		if jump_single or jump_double:
 			jump()
+
+func Sprint():
+	movement_speed = sprint_speed
+func StopSprinting():
+	movement_speed = walk_speed
+
 
 # Handle gravity
 
