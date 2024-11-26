@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwvhgrcyestak"]
+[gd_scene load_steps=6 format=3 uid="uid://dwvhgrcyestak"]
 
 [ext_resource type="PackedScene" uid="uid://dmg3eddclu4p3" path="res://models/props/trap-spikes.glb" id="1_0ers7"]
 [ext_resource type="Script" path="res://objects/trap_spikes.gd" id="2_5ivmb"]
 [ext_resource type="PackedScene" uid="uid://bunxb353h3lje" path="res://objects/damage_dealer_area_3d.tscn" id="2_siud0"]
+[ext_resource type="Script" path="res://scripts/move_spikes.gd" id="3_ct7ei"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_18e5l"]
 size = Vector3(0.75, 0.3, 0.75)
@@ -11,6 +12,12 @@ size = Vector3(0.75, 0.3, 0.75)
 
 [node name="trap-spikes" parent="." index="0"]
 script = ExtResource("2_5ivmb")
+
+[node name="spikes" parent="trap-spikes" index="0"]
+script = ExtResource("3_ct7ei")
+
+[node name="AnimationPlayer" parent="." index="1"]
+active = false
 
 [node name="DamageDealerArea3D" parent="." index="2" instance=ExtResource("2_siud0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)

@@ -1,5 +1,10 @@
 extends Node3D
-
+var isHidden = false
 
 func _on_timer_timeout() -> void:
-	position.y -= .5
+	if isHidden: 
+		position.y +=.5
+		isHidden = false
+	else:
+		position.y -= .5
+		isHidden = true

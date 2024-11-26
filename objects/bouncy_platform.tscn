@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1lrirxi6kd5o"]
+
+[ext_resource type="PackedScene" uid="uid://do8sg1k5xvj2h" path="res://models/core_models/platform.glb" id="1_f1tfu"]
+[ext_resource type="Script" path="res://scripts/bouncy_platform.gd" id="2_h8oli"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2m0v"]
+albedo_color = Color(1, 1, 0.301961, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_phrah"]
+
+[node name="platform" instance=ExtResource("1_f1tfu")]
+
+[node name="platform2" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_q2m0v")
+
+[node name="Area3D" type="Area3D" parent="." index="1"]
+script = ExtResource("2_h8oli")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.0247874, 0)
+shape = SubResource("BoxShape3D_phrah")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
