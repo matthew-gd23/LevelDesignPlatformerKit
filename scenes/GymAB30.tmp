@@ -241,7 +241,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 3, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 3, 6)
 
 [node name="spike-block-wide2" parent="." instance=ExtResource("19_xynq6")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15, 4, -2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 4, 1)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
