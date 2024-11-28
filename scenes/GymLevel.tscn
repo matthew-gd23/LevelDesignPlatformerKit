@@ -260,6 +260,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 8, 1)
 [node name="platform-large18" parent="." instance=ExtResource("4_edeov")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 8, 6)
 
+[node name="platform-large23" parent="." instance=ExtResource("4_edeov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.3427, 2.9681, 1)
+
+[node name="platform-large24" parent="." instance=ExtResource("4_edeov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.3427, 2.9681, 6)
+
 [node name="platform-large5" parent="." instance=ExtResource("4_edeov")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 3, 38)
 
@@ -409,12 +415,6 @@ transform = Transform3D(1.02852e-07, 0, -2.95639, 0, 4.36503, 0, 3.45112, 0, 8.8
 
 [node name="wall8" parent="." instance=ExtResource("17_h6ayy")]
 transform = Transform3D(1.02852e-07, 0, -2.95639, 0, 4.36503, 0, 3.45112, 0, 8.81074e-08, 61.6022, 10.6594, -0.8074)
-
-[node name="wall9" parent="." instance=ExtResource("17_h6ayy")]
-transform = Transform3D(1.02852e-07, 0, -2.95639, 0, 4.36503, 0, 3.45112, 0, 8.81074e-08, 55.3828, 10.6594, -0.8074)
-
-[node name="wall5" parent="." instance=ExtResource("17_h6ayy")]
-transform = Transform3D(1.03074e-07, 0, -9.25872, -3.45859, -4.14963e-07, -2.75931e-07, -1.5118e-07, 9.49325, 2.08322e-14, 58.4707, 15.3699, -1.13472)
 
 [node name="coin" parent="." instance=ExtResource("20_nq3d6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.0806, 6.5, 43.1078)
