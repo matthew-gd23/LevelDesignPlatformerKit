@@ -862,7 +862,7 @@ transform = Transform3D(-1, -8.74228e-08, -3.82137e-15, 0, -4.37114e-08, 1, -8.7
 transform = Transform3D(-1, -8.74228e-08, -3.82137e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, 67.8881, 1.2956, -4.78529)
 
 [node name="checkpoint" parent="Challenge1" instance=ExtResource("13_7aw7g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67, 0, -0.633331)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.1538, 0, -0.633331)
 
 [node name="checkpoint2" parent="Challenge1" instance=ExtResource("13_7aw7g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.7271, 3, 1.36667)
