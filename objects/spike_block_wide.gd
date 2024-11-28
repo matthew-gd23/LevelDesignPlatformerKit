@@ -1,7 +1,7 @@
 extends Node3D
 
 var rotation_speed : float = 180.0
-var move_speed : float = 5.0
+var move_speed : float = 6.0
 var time = 0.0
 
 
