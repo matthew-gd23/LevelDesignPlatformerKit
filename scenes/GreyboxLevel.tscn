@@ -221,7 +221,7 @@ transform = Transform3D(-8.74228e-08, 0, 3.84, 0, 2.1, 0, -2, 0, -1.67852e-07, 4
 transform = Transform3D(-8.74228e-08, 2.89151e-06, -3.84, 0, -33.075, -3.35704e-07, -2, -3.61404e-13, 1.67852e-07, 4, 10, 51)
 
 [node name="platform-large13" parent="." instance=ExtResource("4_ffudq")]
-transform = Transform3D(2, 0, 0, 0, -33.075, -2.11494e-07, 0, 2.89151e-06, -2.4192, 24.7565, 10, -21.6821)
+transform = Transform3D(2, 0, 0, 0, -33.075, -2.11494e-07, 0, 2.89151e-06, -2.4192, 25.0312, 10, -21.6061)
 
 [node name="platform-large9" parent="." instance=ExtResource("4_ffudq")]
 transform = Transform3D(2, 0, 0, 0, 2.1, 0, 0, 0, 2, 8, 10, -0.104074)
