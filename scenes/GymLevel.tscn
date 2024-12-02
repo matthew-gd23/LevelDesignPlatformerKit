@@ -54,7 +54,7 @@ camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
-transform = Transform3D(-0.0560132, -0.421954, 0.904884, -2.93618e-09, 0.906308, 0.422618, -0.99843, 0.0236722, -0.0507651, 61.4455, 8.87684, 3.15781)
+transform = Transform3D(-0.0560132, -0.421954, 0.904884, -2.93618e-09, 0.906308, 0.422618, -0.99843, 0.0236722, -0.0507651, 73.4455, 1.87684, 4.15781)
 script = ExtResource("3_1cdv8")
 target = NodePath("../Player")
 
@@ -70,21 +70,21 @@ view = NodePath("../View")
 [node name="World" type="Node3D" parent="."]
 
 [node name="platform-large2" parent="World" instance=ExtResource("4_edeov")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9558, 2.20127, -16.9049)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9558, 2.20127, -16.9049)
 
 [node name="flag" parent="World" instance=ExtResource("5_nfgsm")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -19.0779, 2.7273, -16.9265)
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -12.0779, 2.7273, -16.9265)
 
 [node name="player_kill_volume" parent="World" instance=ExtResource("6_7sqam")]
 
 [node name="RotatingCloud2" parent="World" instance=ExtResource("7_qornj")]
-transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -14.5517, 0, 2.8745)
+transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -7.5517, 0, 2.7745)
 
 [node name="RotatingCloud4" parent="World" instance=ExtResource("7_qornj")]
-transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -30.5517, 0, 2.8745)
+transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -23.5517, 0, 2.8745)
 
 [node name="RotatingCloud3" parent="World" instance=ExtResource("7_qornj")]
-transform = Transform3D(1.14641e-14, 6, -2.62268e-07, 2.62268e-07, -2.62268e-07, -6, -6, 0, -2.62268e-07, -22.5517, 0, 2.8745)
+transform = Transform3D(1.14641e-14, 6, -2.62268e-07, 2.62268e-07, -2.62268e-07, -6, -6, 0, -2.62268e-07, -15.5517, 0, 2.8745)
 
 [node name="RotatingCloud5" parent="World" instance=ExtResource("7_qornj")]
 transform = Transform3D(-6, 0, -5.24536e-07, 0, 6, 0, 5.24536e-07, 0, -6, 25.4483, 0, 13.8745)
@@ -96,7 +96,7 @@ transform = Transform3D(-6, 0, -5.24536e-07, 0, 6, 0, 5.24536e-07, 0, -6, 25.448
 transform = Transform3D(-6, -2.62268e-07, -2.62268e-07, 2.62268e-07, -2.62268e-07, -6, 2.62268e-07, -6, 2.62268e-07, 25.4483, 0, 21.8745)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
+transform = Transform3D(-0.422618, -0.694272, 0.582564, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
 shadow_enabled = true
 shadow_opacity = 0.75
 
@@ -212,16 +212,16 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="platform-medium" parent="." instance=ExtResource("15_5bckr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, 2.9)
 
 [node name="platform-falling" parent="." instance=ExtResource("16_7drsg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, 3)
 
 [node name="platform-falling2" parent="." instance=ExtResource("16_7drsg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, 3)
 
 [node name="platform-falling3" parent="." instance=ExtResource("16_7drsg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 3, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 3)
 
 [node name="wall2" parent="." instance=ExtResource("17_h6ayy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 9.89491, 58, 8, 3.50433)
