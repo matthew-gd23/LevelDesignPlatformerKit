@@ -20,7 +20,7 @@ var look_at_player : bool = true
 var secondary_target : Node
 
 @onready var camera = $Camera
-@onready var springArm = $SpringArm3D
+
 
 func _ready():
 	camera_rotation = rotation_degrees # Initial rotation
